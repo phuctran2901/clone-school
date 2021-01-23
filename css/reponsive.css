@@ -47,4 +47,7 @@
     .wrapper-news {
         margin: 0;
     }
+    .question-title {
+        font-size: 2rem;
+    }
 }
