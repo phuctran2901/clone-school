@@ -1,0 +1,50 @@
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+    .container {
+        padding: 0;
+    }
+    .logo-title {
+        margin-top: 10px;
+    }
+    .navbar-list {
+        padding: 0 5px;
+    }
+    .warpper-slide {
+        height: 300px;
+    }
+    .carousel-item img {
+        object-fit: contain !important;
+    }
+    .news-notification {
+        padding: 0 5px;
+    }
+    .wrapper-subject {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .news-wrapper {
+        min-height: 700px;
+        padding: 0 2px;
+    }
+    .logo-title__item--title {
+        font-size: 2rem;
+    }
+    .question-list {
+        padding: 2px;
+        overflow-y: auto;
+    }
+    .question-list::before {
+        display: none;
+    }
+    .question-item {
+        width: 100%;
+    }
+    .active-students {
+        padding: 0 10px;
+    }
+    .wrapper-news {
+        margin: 0;
+    }
+}
