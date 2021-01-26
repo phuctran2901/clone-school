@@ -1,24 +1,12 @@
 function start() {
-    getAPI((subjects) => {
+    getAPIListSubject((subjects) => {
         renderListSubject(subjects);
     }, 0);
 };
 
 start();
 
-const indexEl = document.querySelectorAll('.page-link');
-indexEl.forEach(el => {
-    el.addEventListener('click', (e) => {
-        e.preventDefault();
-        getAPI((subjects) => {
-            renderListSubject(subjects)
-        }, el.textContent - 1);
-        el.parentElement.setAttribute("disabled", "");
-    })
-})
-
-
-function getAPI(callback, pagination) {
+function getAPIListSubject(callback, pagination) {
     var serialize = function (obj) {
         var str = [];
         for (var p in obj)
@@ -43,6 +31,7 @@ function getAPI(callback, pagination) {
 
     axios(config)
         .then(res => {
+            console.log(res.data);
             return res.data;
         })
         .then(callback)
@@ -66,7 +55,7 @@ function renderListSubject(subjects) {
         })
         for (var i = 0; i < subjects.totalpage; i++) {
             listBtn += `<li class="page-item">
-            <a class="page-link" href="#">${i + 1}</a>
+            <a onClick = "changePagination(${i})" class="page-link" href="#">${i + 1}</a>
         </li>`;
         }
         if (listBtn) {
@@ -75,7 +64,12 @@ function renderListSubject(subjects) {
         elList.innerHTML = html.join('');
     }
 }
-
+function changePagination(index) {
+    getAPIListSubject((subjects) => {
+        renderListSubject(subjects)
+    }, index);
+    console.log(index)
+}
 // slick
 var glide = new Glide('#intro', {
     type: 'carousel',

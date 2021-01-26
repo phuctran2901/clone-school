@@ -223,19 +223,8 @@ html {
     background-color: #3723cf;
     letter-spacing: 1px;
     font-size: 2.5rem;
+    border-top-right-radius: 10px;
     color: white;
-}
-.news-title::before {
-    content: "";
-    width: 40px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: -2%;
-    border-width: 20px;
-    border-left-color: #3723cf;
-    border-bottom-color: #3723cf;
-    border-style: solid;
 }
 .sub-news {
     width: 100%;
@@ -293,18 +282,7 @@ html {
     font-size: 2.5rem;
     padding-left: 10px;
     color: white;
-}
-.notification-title::before {
-    content: "";
-    width: 40px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: -6%;
-    border-width: 20px;
-    border-left-color: #3723cf;
-    border-bottom-color: #3723cf;
-    border-style: solid;
+    border-top-right-radius: 10px;
 }
 .warpper-notification {
     border: 1px solid #a295ff;
@@ -350,19 +328,8 @@ html {
     background-color: #3723cf;
     font-size: 2.5rem;
     padding-left: 10px;
+    border-top-right-radius: 10px;
     color: white;
-}
-.question-title::before {
-    content: "";
-    width: 40px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-width: 20px;
-    border-left-color: #3723cf;
-    border-bottom-color: #3723cf;
-    border-style: solid;
 }
 .question-list {
     position: relative;
@@ -428,19 +395,8 @@ html {
     background-color: #3723cf;
     font-size: 2.5rem;
     padding-left: 10px;
+    border-top-right-radius: 10px;
     color: white;
-}
-.active-students__title::before {
-    content: "";
-    width: 40px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-width: 20px;
-    border-left-color: #3723cf;
-    border-bottom-color: #3723cf;
-    border-style: solid;
 }
 .slide img {
     width: 100%;
